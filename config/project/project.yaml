@@ -1,0 +1,17 @@
+dateModified: 1620575325
+email:
+  fromEmail: noreply@hyperlane.to
+  fromName: 'Emergent Method Technical Project'
+  transportType: craft\mail\transportadapters\Sendmail
+system:
+  edition: solo
+  live: true
+  name: 'Emergent Method Technical Project'
+  schemaVersion: 3.6.6
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
