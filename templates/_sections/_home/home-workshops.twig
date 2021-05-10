@@ -4,7 +4,7 @@
 	<section id="filter-bar" class="bg-dig-orange w-100 py-4 d-flex my-5"></section>
 	<section id="workshop-cards" class="d-flex flex-wrap flex-row justify-content-center">
 		{% for entry in craft.entries.section('workshops') %}
-			<article id="workshop" class="workshop-card mx-auto">
+			<article id="workshop" class="workshop-card m-3">
 					<h4 class="fw-bold">{{ entry.title }}</h4>
 			</article>
 		{% endfor %}
