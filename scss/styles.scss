@@ -1,7 +1,6 @@
 // Custom.scss
 // Option B: Include parts of Bootstrap
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../node_modules/bootstrap/scss/functions";
 // 2. Include any default variable overrides here
 $body-bg: #1e3358;
 $body-color: #fff;
@@ -13,15 +12,6 @@ $h2-font-size: $font-size-base * 1.33;
 $h3-font-size: $font-size-base;
 $h4-font-size: $font-size-base * 0.78;
 // 3. Include remainder of required Bootstrap stylesheets
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-// 4. Include any optional Bootstrap components as you like
-@import "../node_modules/bootstrap/scss/bootstrap-utilities";
-@import "../node_modules/bootstrap/scss/root";
-@import "../node_modules/bootstrap/scss/bootstrap-reboot";
-@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/images";
-@import "../node_modules/bootstrap/scss/containers";
-@import "../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../node_modules/bootstrap/scss/bootstrap";
 // 5. Add additional custom code here
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
