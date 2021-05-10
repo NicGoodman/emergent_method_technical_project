@@ -1,0 +1,28 @@
+{% set categories = categories ?? null %}
+{% set query = query ?? null %}
+{% set allWorkshops = craft.entries.section('workshops') %}
+<section id="filter-bar" class="bg-dig-orange w-100 py-4 d-flex my-5 justify-content-center">
+		{% for category in craft.categories.group('workshopTypes').all() %}
+			<label for="{{ category.title|lower }}">
+				<label for="{{ category.title|lower }}"><input id="{{ category.title|lower }}" type="checkbox" value="{{ category.id }}" sprig s-trigger="change" name="categories[{{loop.index - 1 }}]" s-replace="#workshop-cards"></input>
+			</span>
+			<h4>{{ category.title }}</h4>
+		</label>
+	{% endfor %}
+</section>
+<section id="workshop-cards" class="d-flex flex-wrap flex-row justify-content-center">
+	{% set params = {
+	section: 'workshops',
+	workshopTypes: categories
+} %}
+	{% set workshops = craft.entries(params).search(query).all() %}
+	{% for workshop in workshops %}
+		<article id="workshop" class="workshop-card m-3 d-flex flex-column justify-content-center align-content-end p-3">
+			<h4 class="fw-bold text-center mt-auto">{{ workshop.title }}</h4>
+			<section id="workshop-type-icons" class="w-100 d-flex flex-row justify-content-end align-self-end mt-auto">
+				{% for type in workshop.workshopTypes %}
+					<img src="{{ type.workshopIcon.one().getUrl }}" alt="" class="mx-1">
+				{% endfor %}
+			</section>
+		</article>
+	{% endfor %}

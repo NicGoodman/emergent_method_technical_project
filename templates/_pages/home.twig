@@ -9,7 +9,7 @@
 
 {% block main %}
 	<main id="main-content">
-		{{ sprig('_sections/_home/home-workshops.twig') }}
+		{% include "_sections/_home/home-workshops.twig" %}
 		{% include "_sections/_home/home-feeds.twig" %}
 	</main>
 {% endblock %}
