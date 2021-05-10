@@ -6,6 +6,7 @@
 		{% for entry in craft.entries.section('workshops') %}
 			<article id="workshop" class="workshop-card m-3 d-flex flex-column justify-content-center align-content-end p-3">
 				<h4 class="fw-bold text-center">{{ entry.title }}</h4>
+                <section id="workshop-type-icons" class="w-100 d-flex flex-row justify-content-end align-self-end"></section>
 				{% for type in entry.workshopTypes %}
 					<img src="{{ type.workshopIcon.one().getUrl }}" alt="">
 				{% endfor %}
