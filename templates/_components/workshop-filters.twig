@@ -3,11 +3,11 @@
 {% set allWorkshops = craft.entries.section('workshops') %}
 <section id="filter-bar" class="bg-dig-orange w-100 py-4 d-flex my-5 flex-row flex-wrap justify-content-around">
 {% for category in craft.categories.group('workshopTypes').all() %}
-	<label for="{{ category.title|lower }}" class="mx-4">
+	<label for="{{ category.title|lower }}" class="mx-4 d-flex flex-row">
 		<input class="d-none" id="{{ category.title|lower }}" type="checkbox" value="{{ category.id }}" sprig s-trigger="change" name="categories[{{loop.index - 1 }}]" s-replace="#workshop-cards"></input>
-		<span class="d-inline-block dig-check mr-1 lh-1"></span>
-        <img src="{{ category.workshopIcon.one().getUrl }}" class="mx-1 filter-icon lh-1">
-		<h4 class="d-inline-block ml-1 fw-bold text-uppercase lh-1">{{ category.title }}</h4>
+		<span class="d-inline-block dig-check lh-1"></span>
+        <img src="{{ category.workshopIcon.one().getUrl }}" class="mx-4 filter-icon lh-1">
+		<h4 class="d-inline-block fw-bold text-uppercase lh-1">{{ category.title }}</h4>
 	</label>
 {% endfor %}
 </section>
