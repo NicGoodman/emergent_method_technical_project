@@ -1,0 +1,5 @@
+<div id="event-feed" class="w-100">
+{% for event in craft.entries.section('events') %}
+    {{ event.title }}
+{% endfor %}
+</div>
