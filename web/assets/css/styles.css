@@ -7523,15 +7523,15 @@ textarea.form-control-lg {
 .bg-dig-orange {
   background-color: #f15a29; }
 
-@keyframes slidein {
+@keyframes fadein {
   from {
-    transform: scaleY(0); }
+    opacity: 0; }
   to {
-    transform: scaleY(1); } }
+    opacity: 1; } }
 
 .workshop-card {
   background: linear-gradient(90deg, #4d2e90 6.48%, #ec297b 58.84%, #ee4747 81.77%, #f05a28 97.93%);
   border-radius: 0.3rem;
   width: 15rem;
   height: 14.125rem;
-  animation: 3s slidein; }
+  animation: 1s fadein; }

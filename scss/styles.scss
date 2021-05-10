@@ -40,12 +40,12 @@ $h5-font-size: $font-size-base * 0.78;
     background-color: $dig-orange;
 }
 
-@keyframes slidein {
+@keyframes fadein {
     from {
-        transform: scaleY(0);
+        opacity: 0;
     }
     to {
-        transform: scaleY(1);
+        opacity: 1;
     }
 }
 
@@ -54,5 +54,5 @@ $h5-font-size: $font-size-base * 0.78;
     border-radius: $border-radius-lg;
     width: 15rem;
     height: 14.125rem;
-    animation: 3s slidein;
+    animation: 1s fadein;
 }
