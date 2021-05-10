@@ -1,5 +1,10 @@
 <div id="event-feed" class="w-100">
-{% for event in craft.entries.section('events') %}
-    {{ event.title }}
-{% endfor %}
+<h2>{{ entry.eventsFeedHeading}}</h2>
+	{% for event in craft.entries.section('events') %}
+		<article id="event" class="d-flex flex-row border-bottom border-white py-4">
+			<div id="event-title" class="d-flex flex-column">
+				{{ event.title }}
+			</div>
+		</article>
+	{% endfor %}
 </div>

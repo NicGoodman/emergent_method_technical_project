@@ -19,7 +19,7 @@
 {% set workshops = craft.entries(params).search(query).all() %}
 {% for workshop in workshops %}
 	<article id="workshop" class="workshop-card m-3 d-flex flex-column justify-content-center align-content-end p-3">
-		<h4 class="fw-bold text-center mt-auto">{{ workshop.title }}</h4>
+		<h4 class="fw-bold text-center mt-auto text-uppercase">{{ workshop.title }}</h4>
 		<section id="workshop-type-icons" class="w-100 d-flex flex-row justify-content-end align-self-end mt-auto">
 			{% for type in workshop.workshopTypes %}
 				<img src="{{ type.workshopIcon.one().getUrl }}" alt="" class="mx-1">

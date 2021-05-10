@@ -1,0 +1,8 @@
+<div id="news-feed" class="w-100">
+	<h2>{{ entry.newsFeedHeading}}</h2>
+	{% for news in craft.entries.section('news') %}
+		<article id="news" class="d-flex flex-column border-bottom border-white py-4">
+			{{ news.title }}
+		</article>
+	{% endfor %}
+</div>
