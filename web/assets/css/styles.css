@@ -7517,5 +7517,8 @@ textarea.form-control-lg {
 .hero {
   z-index: -999; }
 
-.dig-orange {
+.text-dig-orange {
   color: #f15a29; }
+
+.bg-dig-orange {
+  background-color: #f15a29; }

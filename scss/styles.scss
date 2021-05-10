@@ -32,6 +32,10 @@ $h5-font-size: $font-size-base * 0.78;
     z-index: -999;
 }
 
-.dig-orange {
+.text-dig-orange {
     color: $dig-orange;
+}
+
+.bg-dig-orange {
+    background-color: $dig-orange;
 }
