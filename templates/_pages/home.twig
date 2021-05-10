@@ -1,0 +1,16 @@
+{% extends "_layouts/base-layout" %}
+
+{% block header %}
+	{% include "_sections/_general/header.twig" %}
+{% endblock %}
+
+{% block main %}
+<main id="main-content">
+	{% include "_sections/_home/home-hero.twig" %}
+	{% include "_sections/_home/home-main.twig" %}
+</main>
+{% endblock %}
+
+{% block footer %}
+	{% include "_sections/_general/footer.twig" %}
+{% endblock %}
