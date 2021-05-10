@@ -22,4 +22,6 @@ $h5-font-size: $font-size-base * 0.78;
 .btn-register {
     background: $register-gradient;
     border-radius: $border-radius-pill;
+    text-transform: uppercase;
+    font-weight: bold;
 }
