@@ -1,15 +1,17 @@
 {% extends "_layouts/base-layout" %}
 
 {% block header %}
-	{% include "_sections/_general/header.twig" %}
+	<section id="hero-header-wrapper" class="position-relative vw-100 vh-100">
+		{% include "_sections/_general/header.twig" %}
+		{% include "_sections/_home/home-hero.twig" %}
+	</section>
 {% endblock %}
 
 {% block main %}
-<main id="main-content">
-	{% include "_sections/_home/home-hero.twig" %}
-	{% include "_sections/_home/home-workshops.twig" %}
-    {% include "_sections/_home/home-feeds.twig" %}
-</main>
+	<main id="main-content">
+		{% include "_sections/_home/home-workshops.twig" %}
+		{% include "_sections/_home/home-feeds.twig" %}
+	</main>
 {% endblock %}
 
 {% block footer %}
