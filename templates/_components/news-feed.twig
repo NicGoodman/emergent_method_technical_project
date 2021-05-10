@@ -1,8 +1,9 @@
-<div id="news-feed" class="w-100">
-	<h2>{{ entry.newsFeedHeading}}</h2>
+<div id="news-feed" class="w-100 d-flex flex-column align-items-start">
+<h2 class="fw-bold ">{{ entry.newsFeedHeading}}</h2>
 	{% for news in craft.entries.section('news') %}
-		<article id="news" class="d-flex flex-column border-bottom border-white py-4">
+		<article id="news" class="d-flex flex-column border-bottom{% if loop.last == true %}-0{% endif %} border-white py-4">
 			{{ news.title }}
 		</article>
 	{% endfor %}
+    <h4 class="align-self-end">View All</h4>
 </div>
