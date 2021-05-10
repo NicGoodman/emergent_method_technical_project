@@ -9,6 +9,7 @@ $register-gradient: linear-gradient(90deg, #4d2e90 6.48%, #036bac 58.84%, #28a2c
 $workshop-gradient: linear-gradient(90deg, #4d2e90 6.48%, #ec297b 58.84%, #ee4747 81.77%, #f05a28 97.93%);
 $font-family-sans-serif: 'Titillium Web',
 sans-serif;
+$headings-margin-bottom: 0rem;
 $font-size-base: 1.13rem;
 $h1-font-size: $font-size-base * 5.56;
 $h2-font-size: $font-size-base * 1.33;
@@ -23,5 +24,4 @@ $h5-font-size: $font-size-base * 0.78;
     background: $register-gradient;
     border-radius: $border-radius-pill;
     text-transform: uppercase;
-    font-weight: bold;
 }

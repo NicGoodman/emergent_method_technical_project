@@ -63,7 +63,7 @@ hr:not([size]) {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   font-weight: 500;
   line-height: 1.2; }
 
@@ -7512,5 +7512,4 @@ textarea.form-control-lg {
 .btn-register {
   background: linear-gradient(90deg, #4d2e90 6.48%, #036bac 58.84%, #28a2c6 82.45%, #3ec2d5 97.93%);
   border-radius: 50rem;
-  text-transform: uppercase;
-  font-weight: bold; }
+  text-transform: uppercase; }
