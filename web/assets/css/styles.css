@@ -7544,9 +7544,11 @@ textarea.form-control-lg {
 .dig-check::after {
   font-family: "Font Awesome 5 Pro";
   content: "\f0c8";
-  font-size: 1.13rem; }
+  font-size: 1.13rem;
+  font-weight: 900; }
 
 [type="checkbox"]:checked ~ .dig-check::after {
   font-family: "Font Awesome 5 Pro";
   content: "\f14a";
-  font-size: 1.13rem; }
+  font-size: 1.13rem;
+  font-weight: 900; }
