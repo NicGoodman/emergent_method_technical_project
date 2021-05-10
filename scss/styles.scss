@@ -58,3 +58,19 @@ $h5-font-size: $font-size-base * 0.78;
     height: 14.125rem;
     animation: .3s ease-in-out fadein;
 }
+
+.icon::before {
+    display: none;
+}
+
+.dig-check::after {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f0c8";
+    font-size: $font-size-base;
+}
+
+[type="checkbox"]:checked~.dig-check::after {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f14a";
+    font-size: $font-size-base;
+}
