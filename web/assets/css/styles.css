@@ -7538,6 +7538,9 @@ textarea.form-control-lg {
   height: 14.125rem;
   animation: .3s ease-in-out fadein; }
 
+.filter-label {
+  height: 1.13rem; }
+
 .icon::before {
   display: none; }
 

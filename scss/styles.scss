@@ -59,6 +59,10 @@ $h5-font-size: $font-size-base * 0.78;
     animation: .3s ease-in-out fadein;
 }
 
+.filter-label {
+    height: $font-size-base;
+}
+
 .icon::before {
     display: none;
 }
