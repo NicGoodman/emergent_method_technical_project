@@ -25,3 +25,7 @@ $h5-font-size: $font-size-base * 0.78;
     border-radius: $border-radius-pill;
     text-transform: uppercase;
 }
+
+.hero {
+    z-index: -999;
+}
