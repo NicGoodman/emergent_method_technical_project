@@ -2,9 +2,9 @@
 	<h2>{{ entry.workshopsHeading}}</h2>
 	<h5>{{ entry.workshopsSubHeading }}</h5>
 	<section id="filter-bar" class="bg-dig-orange w-100 py-4 d-flex my-5"></section>
-	<section id="workshop-cards" class="d-flex flex-row flex-wrap">
+	<section id="workshop-cards" class="row row-cols-auto">
 		{% for entry in craft.entries.section('workshops') %}
-			<article id="workshop" class="workshop-card">
+			<article id="workshop" class="workshop-card col">
 				{{ entry.title }}
 			</article>
 		{% endfor %}
