@@ -7510,7 +7510,7 @@ textarea.form-control-lg {
     display: none !important; } }
 
 .btn-register {
-  background: linear-gradient(90deg, #4d2e90 6.48%, #036bac 58.84%, #28a2c6 82.45%, #3ec2d5 97.93%);
+  background: linear-gradient(45deg, #4d2e90 6.48%, #036bac 58.84%, #28a2c6 82.45%, #3ec2d5 97.93%);
   border-radius: 50rem;
   text-transform: uppercase; }
 
