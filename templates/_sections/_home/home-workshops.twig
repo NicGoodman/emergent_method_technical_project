@@ -1,13 +1,13 @@
 <section id="workshops" class="container my-5">
-    <h2>{{ entry.workshopsHeading}}</h2>
-    <h5>{{ entry.workshopsSubHeading }}</h5>
-    <section id="filter-bar" class="bg-dig-orange w-100 py-4 d-flex my-5">
-
-    </section>
-    <section id="workshop-cards" class="d-flex flex-row flex-wrap">
-    {% for entry in craft.entries.section('workshops') %}
-        {{ entry.title }}
-    {% endfor %}
-    </section>
+	<h2>{{ entry.workshopsHeading}}</h2>
+	<h5>{{ entry.workshopsSubHeading }}</h5>
+	<section id="filter-bar" class="bg-dig-orange w-100 py-4 d-flex my-5"></section>
+	<section id="workshop-cards" class="d-flex flex-row flex-wrap">
+		{% for entry in craft.entries.section('workshops') %}
+			<article id="workshop" class="workshop-card">
+				{{ entry.title }}
+			</article>
+		{% endfor %}
+	</section>
 
 </section>
