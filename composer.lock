@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "919e04cbcca82d077e1548d62b1276b1",
+    "content-hash": "6d352672f21cc6000992c12ae464b7e2",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2984,6 +2984,68 @@
                 "source": "https://github.com/Seldaek/phar-utils/tree/master"
             },
             "time": "2020-07-07T18:42:57+00:00"
+        },
+        {
+            "name": "studioespresso/craft-date-range",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/studioespresso/craft-date-range.git",
+                "reference": "736dfb97609bba95c21d0ff912ee4fa13c4ef4eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/studioespresso/craft-date-range/zipball/736dfb97609bba95c21d0ff912ee4fa13c4ef4eb",
+                "reference": "736dfb97609bba95c21d0ff912ee4fa13c4ef4eb",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.3.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Date Range Field",
+                "handle": "date-range",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/studioespresso/craft-date-range/master/CHANGELOG.md",
+                "class": "studioespresso\\daterange\\DateRange"
+            },
+            "autoload": {
+                "psr-4": {
+                    "studioespresso\\daterange\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Studio Espresso",
+                    "homepage": "https://studioespresso.co/en"
+                }
+            ],
+            "description": "Date range field",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "date range"
+            ],
+            "support": {
+                "docs": "https://github.com/studioespresso/craft-date-range/blob/master/README.md",
+                "issues": "https://github.com/studioespresso/craft-date-range/issues",
+                "source": "https://github.com/studioespresso/craft-date-range/tree/2.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/janhenckens",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-03-21T15:34:02+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
