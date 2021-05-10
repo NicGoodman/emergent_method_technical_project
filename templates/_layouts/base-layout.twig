@@ -6,21 +6,11 @@
 		<meta charset="UTF-8">
 		<link rel="icon" href="favicon.ico"/>
 		<script data-search-pseudo-elements src="https://kit.fontawesome.com/66cab75abc.js" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/alpine-turbo-drive-adapter@1.0.x/dist/alpine-turbo-drive-adapter.min.js" defer></script>
 				<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-		<script type="module">
-			import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
-		</script>
-		<link rel="stylesheet" href="https://use.typekit.net/lar6trg.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Sour Grapes</title>
+		<title>DIG Conference</title>
 	</head>
-	<body class="bg-sg-white relative flex flex-col items-center min-h-screen" x-data="{ modalOpen: false, flyoutMenuOpen: false, menuOpen: false }" x-bind:class="{ 'overflow-hidden': modalOpen, 'overflow-hidden': menuOpen }">
-		{% set homeEntry = craft.entries().section('home').one() %}
-		{% set logo = homeEntry.logo.one() %}
-		{% set phoneNumber = homeEntry.phoneNumber %}
-		{% set address = homeEntry.address %}
-		{% set logoAltText = homeEntry.logo.one().title %}
+	<body class="">
 		{% block header %}{% endblock %}
 		{% block main %}{% endblock %}
 		{% block footer %}{% endblock %}
