@@ -4,20 +4,22 @@
 // 2. Include any default variable overrides here
 $body-bg: #1e3358;
 $body-color: #fff;
+$link-color: #F2F2F2;
 $register-gradient: linear-gradient(90deg, #4d2e90 6.48%, #036bac 58.84%, #28a2c6 82.45%, #3ec2d5 97.93%);
-$workshop-gradient: linear-gradient(#4d2e90 6.48%, #ec297b 58.84%, #ee4747 81.77%, #f05a28 97.93%);
+$workshop-gradient: linear-gradient(90deg, #4d2e90 6.48%, #ec297b 58.84%, #ee4747 81.77%, #f05a28 97.93%);
 $font-family-sans-serif: 'Titillium Web',
 sans-serif;
 $font-size-base: 1.5rem;
 $h1-font-size: $font-size-base * 5.56;
 $h2-font-size: $font-size-base * 1.33;
-$h3-font-size: $font-size-base;
-$h4-font-size: $font-size-base * 0.78;
-.btn-register {
-    background: $register-gradient;
-}
-
+$h3-font-size: $font-size-base * 1.11;
+$h4-font-size: $font-size-base;
+$h5-font-size: $font-size-base * 0.78;
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/bootstrap";
 // 5. Add additional custom code here
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.btn-register {
+    background: $register-gradient;
+    border-radius: $border-radius-pill;
+}

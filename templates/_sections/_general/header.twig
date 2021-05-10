@@ -6,12 +6,16 @@
 
 		<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
 			{% for block in entry.navigation %}
-				<li class="nav-link px-2 link-secondary">{{ block.itemTitle }}</li>
+				<li class="nav-link px-2 link-secondary">
+					<h4>{{ block.itemTitle }}</h4>
+				</li>
 			{% endfor %}
 		</ul>
 
 		<div class="col-md-3 text-end">
-			<button type="button" class="btn btn-primary btn-register">Register</button>
+			<button type="button" class="btn btn-register">
+				<h3>Register</h3>
+			</button>
 		</div>
 	</header>
 </div>

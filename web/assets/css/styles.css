@@ -1,13 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-.btn-register {
-  background: linear-gradient(90deg, #4d2e90 6.48%, #036bac 58.84%, #28a2c6 82.45%, #3ec2d5 97.93%); }
-
 /*!
  * Bootstrap v5.0.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -86,19 +83,19 @@ h2, .h2 {
       font-size: 1.995rem; } }
 
 h3, .h3 {
-  font-size: calc(1.275rem + 0.3vw); }
+  font-size: calc(1.2915rem + 0.498vw); }
   @media (min-width: 1200px) {
     h3, .h3 {
-      font-size: 1.5rem; } }
+      font-size: 1.665rem; } }
 
 h4, .h4 {
-  font-size: 1.17rem; }
+  font-size: calc(1.275rem + 0.3vw); }
+  @media (min-width: 1200px) {
+    h4, .h4 {
+      font-size: 1.5rem; } }
 
 h5, .h5 {
-  font-size: calc(1.3125rem + 0.75vw); }
-  @media (min-width: 1200px) {
-    h5, .h5 {
-      font-size: 1.875rem; } }
+  font-size: 1.17rem; }
 
 h6, .h6 {
   font-size: calc(1.275rem + 0.3vw); }
@@ -172,10 +169,10 @@ sup {
   top: -.5em; }
 
 a {
-  color: #0d6efd;
+  color: #F2F2F2;
   text-decoration: underline; }
   a:hover {
-    color: #0a58ca; }
+    color: #c2c2c2; }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
@@ -2551,10 +2548,10 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #0d6efd;
+  color: #F2F2F2;
   text-decoration: underline; }
   .btn-link:hover {
-    color: #0a58ca; }
+    color: #c2c2c2; }
   .btn-link:disabled, .btn-link.disabled {
     color: #6c757d; }
 
@@ -2943,14 +2940,14 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: #F2F2F2;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
     .nav-link {
       transition: none; } }
   .nav-link:hover, .nav-link:focus {
-    color: #0a58ca; }
+    color: #c2c2c2; }
   .nav-link.disabled {
     color: #6c757d;
     pointer-events: none;
@@ -3513,7 +3510,7 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #0d6efd;
+  color: #F2F2F2;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -3523,12 +3520,12 @@ textarea.form-control-lg {
       transition: none; } }
   .page-link:hover {
     z-index: 2;
-    color: #0a58ca;
+    color: #c2c2c2;
     background-color: #e9ecef;
     border-color: #dee2e6; }
   .page-link:focus {
     z-index: 3;
-    color: #0a58ca;
+    color: #c2c2c2;
     background-color: #e9ecef;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
@@ -5629,13 +5626,13 @@ textarea.form-control-lg {
   font-size: calc(1.3245rem + 0.894vw) !important; }
 
 .fs-3 {
-  font-size: calc(1.275rem + 0.3vw) !important; }
+  font-size: calc(1.2915rem + 0.498vw) !important; }
 
 .fs-4 {
-  font-size: 1.17rem !important; }
+  font-size: calc(1.275rem + 0.3vw) !important; }
 
 .fs-5 {
-  font-size: calc(1.3125rem + 0.75vw) !important; }
+  font-size: 1.17rem !important; }
 
 .fs-6 {
   font-size: calc(1.275rem + 0.3vw) !important; }
@@ -7554,9 +7551,9 @@ textarea.form-control-lg {
   .fs-2 {
     font-size: 1.995rem !important; }
   .fs-3 {
+    font-size: 1.665rem !important; }
+  .fs-4 {
     font-size: 1.5rem !important; }
-  .fs-5 {
-    font-size: 1.875rem !important; }
   .fs-6 {
     font-size: 1.5rem !important; } }
 
@@ -7581,3 +7578,7 @@ textarea.form-control-lg {
     display: inline-flex !important; }
   .d-print-none {
     display: none !important; } }
+
+.btn-register {
+  background: linear-gradient(90deg, #4d2e90 6.48%, #036bac 58.84%, #28a2c6 82.45%, #3ec2d5 97.93%);
+  border-radius: 50rem; }
