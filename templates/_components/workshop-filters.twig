@@ -6,7 +6,7 @@
 	<label for="{{ category.title|lower }}" class="mx-4 d-flex flex-row">
 		<input class="d-none" id="{{ category.title|lower }}" type="checkbox" value="{{ category.id }}" sprig s-trigger="change" name="categories[{{loop.index - 1 }}]" s-replace="#workshop-cards"></input>
 		<span class="d-inline-block dig-check lh-1"></span>
-        <img src="{{ category.workshopIcon.one().getUrl }}" class="mx-4 filter-icon lh-1">
+        <img src="{{ category.workshopIcon.one().getUrl }}" class="mx-3 filter-icon lh-1">
 		<h4 class="d-inline-block fw-bold text-uppercase lh-1">{{ category.title }}</h4>
 	</label>
 {% endfor %}
