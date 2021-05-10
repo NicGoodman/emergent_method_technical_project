@@ -40,9 +40,19 @@ $h5-font-size: $font-size-base * 0.78;
     background-color: $dig-orange;
 }
 
+@keyframes slidein {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
 .workshop-card {
     background: $workshop-gradient;
     border-radius: $border-radius-lg;
     width: 15rem;
     height: 14.125rem;
+    animation: 3s slidein;
 }
