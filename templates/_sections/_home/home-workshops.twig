@@ -4,10 +4,11 @@
 	<section id="filter-bar" class="bg-dig-orange w-100 py-4 d-flex my-5"></section>
 	<section id="workshop-cards" class="row row-cols-auto">
 		{% for entry in craft.entries.section('workshops') %}
-			<article id="workshop" class="workshop-card col">
-				{{ entry.title }}
+			<article id="workshop" class="col">
+				<div id="" class="workshop-card">
+					<h4 class="fw-bold">{{ entry.title }}</h4>
+				</div>
 			</article>
 		{% endfor %}
 	</section>
-
 </section>
