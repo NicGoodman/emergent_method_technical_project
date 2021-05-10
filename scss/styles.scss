@@ -16,6 +16,7 @@ $h4-font-size: $font-size-base * 0.78;
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 // 4. Include any optional Bootstrap components as you like
+@import "../node_modules/bootstrap/scss/bootstrap-utilities";
 @import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
