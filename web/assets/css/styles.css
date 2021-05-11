@@ -7538,6 +7538,13 @@ textarea.form-control-lg {
   height: 14.125rem;
   animation: .3s ease-in-out fadein; }
 
+.event-date {
+  background-color: white;
+  border-radius: 0.3rem;
+  width: 4.375rem;
+  height: 4.375rem;
+  color: #13223c; }
+
 .filter-icon {
   height: 1.13rem; }
 
