@@ -4,7 +4,7 @@
 		<article id="event" class="d-flex w-100 flex-row border-bottom{% if loop.last == true %}-0{% endif %} border-white py-4">
 			<div id="event-title" class="d-flex flex-column">
 				<h4 class="fw-bold">{{ event.title }}</h4>
-				<h5 class="">{{ event.eventTimes.formatted({ time: 'h:i'}, '-'|t) }}</h5>
+				<h5 class="">{{ event.eventTimes.formatted("Hi", "-"|t) }}</h5>
 			</div>
 		</article>
 	{% endfor %}
