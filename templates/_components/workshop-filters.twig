@@ -1,7 +1,7 @@
 {% set categories = categories ?? null %}
 {% set query = query ?? null %}
 {% set allWorkshops = craft.entries.section('workshops') %}
-<section id="filter-bar" class="bg-dig-orange w-100 py-4 d-flex my-5 flex-row flex-wrap justify-content-around">
+<section id="filter-bar" class="bg-dig-orange w-100 py-1 d-flex my-5 flex-row flex-wrap justify-content-around">
 {% for category in craft.categories.group('workshopTypes').all() %}
 	<label for="{{ category.title|lower }}" class="m-3 d-flex flex-row">
 		<input class="d-none" id="{{ category.title|lower }}" type="checkbox" value="{{ category.id }}" sprig s-trigger="change" name="categories[{{loop.index - 1 }}]" s-replace="#workshop-cards"></input>
