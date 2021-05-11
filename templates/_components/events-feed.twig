@@ -2,13 +2,13 @@
 	<h2 class="fw-bold ">{{ entry.eventsFeedHeading}}</h2>
 	{% for event in craft.entries.section('events').orderBy('eventTimes asc').all() %}
 		<article id="event" class="d-flex w-100 flex-row border-bottom{% if loop.last == true %}-0{% endif %} border-white py-4">
-        <div id="event-date" class="event-date d-flex flex-row flex-wrap align-content-center">
-        <h4 class="text-center text-uppercase w-100 lh-1">{{ event.eventTimes.start|date("M") }}</h4>
-        <h2 class="text-center fw-bold text-uppercase w-100 lh-1">{{ event.eventTimes.start|date("j") }}</h2>
-        </div>
+			<div id="event-date" class="event-date d-flex flex-row flex-wrap align-content-center">
+				<h4 class="text-center text-uppercase w-100 lh-1">{{ event.eventTimes.start|date("M") }}</h4>
+				<h2 class="text-center fw-bold text-uppercase w-100 lh-1">{{ event.eventTimes.start|date("j") }}</h2>
+			</div>
 			<div id="event-title" class="d-flex flex-column ps-4">
-				<h4 class="fw-bold mb-3">{{ event.title }}</h4>
-				<h5 class="">{{ event.eventTimes.formatted("g:i a", "-"|t) }}</h5>
+				<h4 class="fw-bold mb-3 mt-auto">{{ event.title }}</h4>
+				<h5 class="mb-auto">{{ event.eventTimes.formatted("g:i a", "-"|t) }}</h5>
 			</div>
 		</article>
 	{% endfor %}
