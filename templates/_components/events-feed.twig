@@ -3,7 +3,7 @@
 	{% for event in craft.entries.section('events') %}
 		<article id="event" class="d-flex w-100 flex-row border-bottom{% if loop.last == true %}-0{% endif %} border-white py-4">
         <div id="event-date" class="event-date">
-        <h4 class="text-center text-uppercase">{{ event.eventTimes.start.formatted("M") }}</h4>
+        <h4 class="text-center text-uppercase">{{ event.eventTimes.formatted("M").start }}</h4>
         </div>
 			<div id="event-title" class="d-flex flex-column ps-3">
 				<h4 class="fw-bold mb-2">{{ event.title }}</h4>
