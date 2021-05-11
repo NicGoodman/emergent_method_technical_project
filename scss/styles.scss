@@ -22,25 +22,8 @@ $h5-font-size: $font-size-base * 0.78;
 @import "../node_modules/bootstrap/scss/bootstrap";
 // custom classes
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-.btn-register {
-    background: $register-gradient no-repeat;
-    border-radius: $border-radius-pill;
-    text-transform: uppercase;
-}
-
-.hero {
-    z-index: -999;
-}
-
-.text-dig-orange {
-    color: $dig-orange;
-}
-
-.bg-dig-orange {
-    background-color: $dig-orange;
-}
-
-@keyframes fadein {
+//animations
+@keyframes cardIn {
     from {
         opacity: 0;
         transform: scale(0);
@@ -51,12 +34,57 @@ $h5-font-size: $font-size-base * 0.78;
     }
 }
 
+@keyframes headerIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes heroIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header-content {
+    animation: .3s ease-in-out headerIn;
+}
+
+.btn-register {
+    background: $register-gradient no-repeat;
+    border-radius: $border-radius-pill;
+    text-transform: uppercase;
+}
+
+.hero {
+    z-index: -999;
+}
+
+.hero-content {
+    animation-delay: .25s;
+    animation: .3s ease-in-out heroIn;
+}
+
+.text-dig-orange {
+    color: $dig-orange;
+}
+
+.bg-dig-orange {
+    background-color: $dig-orange;
+}
+
 .workshop-card {
     background: $workshop-gradient no-repeat;
     border-radius: $border-radius-lg;
     width: 15rem;
     height: 14.125rem;
-    animation: .3s ease-in-out fadein;
+    animation: .3s ease-in-out cardIn;
 }
 
 .event-date {

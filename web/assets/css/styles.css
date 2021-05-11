@@ -7799,6 +7799,29 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: scale(0); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes headerIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes heroIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.header-content {
+  animation: .3s ease-in-out headerIn; }
+
 .btn-register {
   background: linear-gradient(135deg, #4d2e90 6.48%, #036bac 58.84%, #28a2c6 82.45%, #3ec2d5 97.93%) no-repeat;
   border-radius: 50rem;
@@ -7807,26 +7830,22 @@ textarea.form-control-lg {
 .hero {
   z-index: -999; }
 
+.hero-content {
+  animation-delay: .25s;
+  animation: .3s ease-in-out heroIn; }
+
 .text-dig-orange {
   color: #f15a29; }
 
 .bg-dig-orange {
   background-color: #f15a29; }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-    transform: scale(0); }
-  to {
-    opacity: 1;
-    transform: scale(1); } }
-
 .workshop-card {
   background: linear-gradient(90deg, #4d2e90 6.48%, #ec297b 58.84%, #ee4747 81.77%, #f05a28 97.93%) no-repeat;
   border-radius: 0.3rem;
   width: 15rem;
   height: 14.125rem;
-  animation: .3s ease-in-out fadein; }
+  animation: .3s ease-in-out cardIn; }
 
 .event-date {
   background-color: white;
