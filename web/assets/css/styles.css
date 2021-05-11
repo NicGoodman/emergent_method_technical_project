@@ -7820,7 +7820,7 @@ textarea.form-control-lg {
     opacity: 1; } }
 
 .header-content {
-  animation-delay: .25s;
+  animation-delay: 1s;
   animation: .3s ease-in-out headerIn; }
 
 .btn-register {
@@ -7832,7 +7832,7 @@ textarea.form-control-lg {
   z-index: -999; }
 
 .hero-content {
-  animation-delay: .5s;
+  animation-delay: 1.3s;
   animation: .3s ease-in-out heroIn; }
 
 .text-dig-orange {
