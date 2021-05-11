@@ -23,7 +23,7 @@ $h5-font-size: $font-size-base * 0.78;
 // custom classes
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 .btn-register {
-    background: $register-gradient;
+    background: $register-gradient no-repeat;
     border-radius: $border-radius-pill;
     text-transform: uppercase;
 }
@@ -52,7 +52,7 @@ $h5-font-size: $font-size-base * 0.78;
 }
 
 .workshop-card {
-    background: $workshop-gradient;
+    background: $workshop-gradient no-repeat;
     border-radius: $border-radius-lg;
     width: 15rem;
     height: 14.125rem;
