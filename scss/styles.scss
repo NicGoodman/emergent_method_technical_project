@@ -67,6 +67,10 @@ $h5-font-size: $font-size-base * 0.78;
     color: $dig-dark-blue;
 }
 
+.border-mid-gray {
+    border-color: #78859b;
+}
+
 .filter-icon {
     height: $font-size-base;
 }
@@ -100,5 +104,4 @@ h5 {
 .social-item {
     color: white;
     font-size: $font-size-base * 1.33;
-    margin-left: $font-size-base * 1.33;
 }

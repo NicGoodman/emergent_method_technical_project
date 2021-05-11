@@ -1,7 +1,7 @@
 <div id="news-feed" class="w-100 d-flex flex-column align-items-start py-5 ps-0 ps-lg-5">
 	<h2 class="fw-bold ">{{ entry.newsFeedHeading}}</h2>
 	{% for news in craft.entries.section('news').orderBy('publishDate desc').all() %}
-		<article id="news" class="d-flex flex-column w-100 border-bottom{% if loop.last == true %}-0{% endif %} border-white py-4">
+		<article id="news" class="d-flex flex-column w-100 border-bottom{% if loop.last == true %}-0{% endif %} border-mid-gray py-4">
 			<h4 class="fw-bold mb-3">{{ news.title }}</h4>
 			<h5 class="">{{ news.publishDate|date("F j, Y") }}</h5>
 		</article>
