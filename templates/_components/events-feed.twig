@@ -1,7 +1,7 @@
 <div id="event-feed" class="w-100 d-flex flex-column align-items-start py-5 pe-0 pe-lg-5">
 	<h2 class="fw-bold ">{{ entry.eventsFeedHeading}}</h2>
 	{% for event in craft.entries.section('events').orderBy('eventTimes asc').all() %}
-		<article id="event" class="d-flex w-100 flex-row border-bottom{% if loop.last == true %}-0{% endif %} border-mid-gray py-4">
+		<article id="event" class="d-flex w-100 flex-row {% if loop.last != true %}border-mid-gray{% endif %} py-4">
 			<div id="event-date" class="event-date d-flex flex-row flex-wrap align-content-center">
 				<h4 class="text-center text-uppercase w-100 lh-1">{{ event.eventTimes.start|date("M") }}</h4>
 				<h2 class="text-center fw-bold text-uppercase w-100 lh-1">{{ event.eventTimes.start|date("j") }}</h2>

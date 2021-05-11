@@ -7836,7 +7836,7 @@ textarea.form-control-lg {
   color: #13223c; }
 
 .border-mid-gray {
-  border-color: #78859b; }
+  border: 1px solid #78859b; }
 
 .filter-icon {
   height: 1.13rem; }
