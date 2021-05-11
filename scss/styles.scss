@@ -53,6 +53,7 @@ $h5-font-size: $font-size-base * 0.78;
 }
 
 .header-content {
+    animation-delay: .25s;
     animation: .3s ease-in-out headerIn;
 }
 
@@ -67,7 +68,7 @@ $h5-font-size: $font-size-base * 0.78;
 }
 
 .hero-content {
-    animation-delay: .25s;
+    animation-delay: .5s;
     animation: .3s ease-in-out heroIn;
 }
 
