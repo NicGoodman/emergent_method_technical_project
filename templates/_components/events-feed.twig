@@ -1,4 +1,4 @@
-<div id="event-feed" class="w-100 d-flex flex-column align-items-start py-5 pr-5">
+<div id="event-feed" class="w-100 d-flex flex-column align-items-start py-5 pe-4">
 	<h2 class="fw-bold ">{{ entry.eventsFeedHeading}}</h2>
 	{% for event in craft.entries.section('events') %}
 		<article id="event" class="d-flex w-100 flex-row border-bottom{% if loop.last == true %}-0{% endif %} border-white py-4">
